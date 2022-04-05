@@ -1,0 +1,12 @@
+live_loop :bass do
+  4.times do
+    sample :bd_haus, cutoff: 110, pan: -0.5, amp: 2
+    synth :beep, note: :C4, attack: 0,release: 0.1
+    sleep 1
+  end
+  4.times do
+    sample :bd_haus, cutoff: 110, pan: 0.5, amp: 2
+    synth :beep, note: :C5, attack: 0,release: 0.1
+    sleep 1
+  end
+end
